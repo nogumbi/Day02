@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void ft_putcher(char c)
+void ft_putchar(char c)
 {
 	write(1, &c,1);
 }
@@ -11,13 +11,7 @@ void ft_print_alphabet(void)
 	letter = 'a';
 	while(letter <= 'z')
 	{
-		ft_putcher(letter++);
+		ft_putchar(letter++);
 	}
-}
-
-int main(void)
-{
-	ft_print_alphabet();
-		return 0;
 }
 
