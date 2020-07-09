@@ -1,9 +1,4 @@
-#include<unistd.h>
-
 void ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
 
 void ft_print_comb(void)
 {
@@ -23,23 +18,17 @@ void ft_print_comb(void)
 				{
 					ft_putchar(n1);
 					ft_putchar(n2);
-					ft_putchar(n3);
-						
+					ft_putchar(n3);	
 					if( !(n1 == '7' && n2 == '8' && n3 == '9'))
 					{
 						ft_putchar(',');
-						ft_putchar(' ');
-						
+						ft_putchar(' ');	
 					}
-
 				}
-
-
 				n3++;
 			}
 			n2++;
 		}
 		n1++;
 	}
-
 }
